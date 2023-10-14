@@ -1,5 +1,5 @@
 APP_NAME = Laboratory_1
-BUILD_DIR = ./bin
+BUILD_DIR = ./App
 C_FILES = ./main.cpp
 
 APP_DEFINES:=
