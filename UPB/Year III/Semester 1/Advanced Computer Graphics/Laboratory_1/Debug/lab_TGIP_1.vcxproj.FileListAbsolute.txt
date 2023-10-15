@@ -1,0 +1,3 @@
+F:\Teaching\Sem1\ACG\Lab1\Lab1_ACG - OpenGL window\Debug\ACG_Lab1.exe
+F:\Teaching\Sem1\ACG\Lab1\Lab1_ACG - OpenGL window\Debug\ACG_Lab1.pdb
+D:\ACG\Lab1\Lab1_ACG - OpenGL window\Debug\ACG_Lab1.exe

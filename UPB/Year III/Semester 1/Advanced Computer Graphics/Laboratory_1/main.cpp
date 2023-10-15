@@ -1,6 +1,12 @@
-#include "Dependencies/GLFW/glfw3.h"
+// Include standard headers
 #include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
 
+// Include GLFW
+#include "dependente\glfw\glfw3.h"
+
+//variables
 GLFWwindow* window;
 const int width = 1024, height = 768;
 
@@ -70,3 +76,5 @@ int main()
 
 	return 0;
 }
+
+

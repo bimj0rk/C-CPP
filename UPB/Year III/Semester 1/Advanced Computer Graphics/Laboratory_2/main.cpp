@@ -4,10 +4,10 @@
 #include <iostream>
 
 // Include GLEW
-#include "Dependencies/GLEW/glew.h"
+#include "dependente\glew\glew.h"
 
 // Include GLFW
-#include "Dependencies/GLFW/glfw3.h"
+#include "dependente\glfw\glfw3.h"
 
 #include "shader.hpp"
 
@@ -63,37 +63,55 @@ int main(void)
 	glUseProgram(programID);
 
 	// Create some data for the vertices
-	GLfloat vertices[] = {
+	//VBO
+	/*GLfloat vertices[] = {
 		-0.5f, -0.5f, 0.0f,
 		0.5f, -0.5f, 0.0f,
-		0.0f,  0.5f, 0.0f,
+		0.5f, 0.5f, 0.0f,
+		-0.5f, -0.5f, 0.0f,
+		0.5f, 0.5f, 0.0f,
+		-0.5f, 0.5f, 0.0f,
+	};
+	*/
+
+	//IBO
+	GLfloat vertices[] = {
+		0.5f, 0.5f, 0.0f, //TR
+		0.5f, -0.5f, 0.0f, //BR
+		-0.5f, -0.5f, 0.0f, //BL
+		-0.5f, 0.5f, 0.0f, //TL
 	};
 
-	// To-DO: Ex 2
-	// Add indices for EBO
+	GLuint indices[] = {
+		0, 1, 3,
+		1, 2, 3,
+	};
 
-	// To-DO: Ex 3
 	// Add a VAO
 	// !!! VAO must be bound BEFORE the VBO & EBO
 
 	// Create a vertex buffer object
-	GLuint VBO_ID;
-	glGenBuffers(1, &VBO_ID);
+	GLuint VBO_ID;//VBO
+	glGenBuffers(1, &VBO_ID);//VBO
+	 
+	GLuint IBO_ID;//IBO
+	glGenBuffers(1, &IBO_ID);//IBO
+	
 	// Bind buffer to a target
-	glBindBuffer(GL_ARRAY_BUFFER, VBO_ID);
+	
+	glBindBuffer(GL_ARRAY_BUFFER, VBO_ID);//VBO
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO_ID);//IBO
+
+
 	// Upload data to the buffer
-	//https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/glBufferData.xhtml
-	glBufferData(GL_ARRAY_BUFFER,
-		sizeof(vertices),
-		&vertices[0], //pointer to the data
-		//vertices
-		GL_STATIC_DRAW);
+	
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices) ,&vertices[0], GL_STATIC_DRAW); //VBO
 
-	// To-DO: Ex 2
-	// Create EBO, Bind it, upload data
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), &indices[0], GL_STATIC_DRAW);//IBO
 
-	//glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //solid mode
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //solid mode
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
 
 	// Check if the window was closed
 	while (!glfwWindowShouldClose(window))
@@ -116,30 +134,21 @@ int main(void)
 		glEnableVertexAttribArray(0);
 
 		// attribute buffer : vertices
-		glVertexAttribPointer(
-			0,                  // attribute 0, must match the layout location in the shader.
-			3,                  // size of each attribute
-			GL_FLOAT,           // type of data
-			GL_FALSE,           // should be normalized?
-			3 * sizeof(GL_FLOAT),   // stride
-			0            // array buffer offset
-			//same as (void*)0 for older OpenGL versions
-		);
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), 0);
 
 		// Draw a triangle
-		// Ex2: How do we change it to use indices?
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_TRIANGLES, 0, 3); //VBO
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);//IBO
 		// type of primitive
 		// starting index
 		// nr of vertices
 		// 3 consecutive indices starting at
 		// 0 -> 1 triangle
 	}
-
+		
 	// Cleanup VBO
-	// TO-DO: Ex 2 & 3
-	// De-allocate memory from all buffers
 	glDeleteBuffers(1, &VBO_ID);
+	glDeleteBuffers(1, &IBO_ID);
 	glDeleteProgram(programID);
 
 	// Close OpenGL window and terminate GLFW
