@@ -63,6 +63,12 @@ int main(void)
 	glUseProgram(programID);
 
 	// Create some data for the vertices
+	
+	// Add a VAO
+	// !!! VAO must be bound BEFORE the VBO & EBO
+	GLuint VAO;
+	glGenVertexArrays(1, &VAO);
+	
 	//VBO
 	/*GLfloat vertices[] = {
 		-0.5f, -0.5f, 0.0f,
@@ -80,15 +86,21 @@ int main(void)
 		0.5f, -0.5f, 0.0f, //BR
 		-0.5f, -0.5f, 0.0f, //BL
 		-0.5f, 0.5f, 0.0f, //TL
+		//for ex 4
+		-0.2f, 0.0f, 0.0f,
+		0.2f, 0.0f, 0.0f,
+		0.0f, 0.2f, 0.0f,
+		-0.2f, -0.4f, 0.0f,
+		0.2f, -0.4f, 0.0f,
+		0.0f, -0.6f, 0.0f,
 	};
 
 	GLuint indices[] = {
 		0, 1, 3,
 		1, 2, 3,
+		4, 5, 6,
+		7, 8, 9.
 	};
-
-	// Add a VAO
-	// !!! VAO must be bound BEFORE the VBO & EBO
 
 	// Create a vertex buffer object
 	GLuint VBO_ID;//VBO
@@ -98,6 +110,7 @@ int main(void)
 	glGenBuffers(1, &IBO_ID);//IBO
 	
 	// Bind buffer to a target
+	glBindVertexArray(VAO);
 	
 	glBindBuffer(GL_ARRAY_BUFFER, VBO_ID);//VBO
 
@@ -110,8 +123,8 @@ int main(void)
 
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), &indices[0], GL_STATIC_DRAW);//IBO
 
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //solid mode
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //solid mode
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
 
 	// Check if the window was closed
 	while (!glfwWindowShouldClose(window))
@@ -138,7 +151,7 @@ int main(void)
 
 		// Draw a triangle
 		glDrawArrays(GL_TRIANGLES, 0, 3); //VBO
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);//IBO
+		glDrawElements(GL_TRIANGLES, 15, GL_UNSIGNED_INT, 0);//IBO
 		// type of primitive
 		// starting index
 		// nr of vertices
@@ -156,5 +169,3 @@ int main(void)
 
 	return 0;
 }
-
-
