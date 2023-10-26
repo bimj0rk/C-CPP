@@ -44,17 +44,22 @@ void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 }
 
 //Ex 3: Add callback for mouse button
-void mouse_position_callback(GLFWwindow* window, int button, int action, int mods) {
-	if (button == GLFW_MOUSE_BUTTON_MIDDLE && action == GLFW_PRESS) {
-		glm::mat4 trans(1.0f);
-		trans = glm::translate(trans, positions[2]);
+int i = 0;
+void mouse_position_callback(GLFWwindow* window, int button, int action, int mods) 
+{
+	if (button == GLFW_MOUSE_BUTTON_MIDDLE && action == GLFW_PRESS) 
+	{
+		trans = glm::mat4(1.0f);
+		trans = glm::translate(trans, positions[i++]);
+		if (i == 10) i = 0;
 	}
 }
 
 
 //Ex 4: Complete callback for adjusting the viewport when resizing the window
 void window_callback(GLFWwindow* window, int new_width, int new_height)
-{
+{	
+
 	//what should we do here?
 }
 
