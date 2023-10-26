@@ -59,8 +59,7 @@ void mouse_position_callback(GLFWwindow* window, int button, int action, int mod
 //Ex 4: Complete callback for adjusting the viewport when resizing the window
 void window_callback(GLFWwindow* window, int new_width, int new_height)
 {	
-
-	//what should we do here?
+	glViewport(0, 0, new_width, new_height);
 }
 
 int main(void)
