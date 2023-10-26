@@ -1,0 +1,17 @@
+#version 330 core
+
+// Output data
+out vec4 fragColor;
+
+// The input variable from the vertex shader (Attention! Same name and same type) 
+in vec4 vertexColor;
+
+uniform vec4 changeColor;
+
+void main()
+{
+	// Output color = red 
+	fragColor = vec4(changeColor);
+
+
+}
