@@ -1,0 +1,16 @@
+﻿          1 file(s) copied.
+          1 file(s) copied.
+  main.cpp
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(72,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(73,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(73,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(74,8): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(74,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(75,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(75,9): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(75,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(77,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(78,8): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(79,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\main.cpp(79,9): warning C4305: 'initializing': truncation from 'double' to 'float'
+  ACG_Lab5.vcxproj -> C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_5\Debug\ACG_Lab5.exe
