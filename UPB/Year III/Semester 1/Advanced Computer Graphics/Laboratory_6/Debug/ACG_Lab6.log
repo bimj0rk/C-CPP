@@ -1,0 +1,9 @@
+﻿          1 file(s) copied.
+          1 file(s) copied.
+  camera.cpp
+  main.cpp
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_6\main.cpp(226,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_6\main.cpp(280,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_6\main.cpp(281,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  ACG_Lab6.vcxproj -> C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_6\Debug\ACG_Lab6.exe
