@@ -1,0 +1,6 @@
+﻿          1 file(s) copied.
+          1 file(s) copied.
+  main.cpp
+F:\Teaching\Sem1\ACG\Lab7\Lab7 - OpenGL\main.cpp(233,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\Teaching\Sem1\ACG\Lab7\Lab7 - OpenGL\main.cpp(213,9): warning C4101: 'texture2': unreferenced local variable
+  Lab7.vcxproj -> F:\Teaching\Sem1\ACG\Lab7\Lab7 - OpenGL\Debug\ACG_Lab7.exe

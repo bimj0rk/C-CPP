@@ -1,0 +1,14 @@
+﻿          1 file(s) copied.
+          1 file(s) copied.
+  main.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\dependente\glfw\glfw3.h(98,1): message : see previous definition of 'APIENTRY'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(108,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(109,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(109,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(110,8): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(110,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(111,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(111,8): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\main.cpp(111,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+  ACG_Lab5.vcxproj -> C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Project_Demo\Debug\ACG_Lab5.exe

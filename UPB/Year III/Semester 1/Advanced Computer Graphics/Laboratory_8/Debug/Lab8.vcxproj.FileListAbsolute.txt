@@ -1,0 +1,3 @@
+F:\Teaching\Sem1\ACG\Lab7 - textures\Lab8 - OpenGL\Debug\ACG_Lab7.exe
+F:\Teaching\Sem1\ACG\Lab7 - textures\Lab8 - OpenGL\Debug\ACG_Lab7.pdb
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_8\Debug\ACG_Lab8.exe

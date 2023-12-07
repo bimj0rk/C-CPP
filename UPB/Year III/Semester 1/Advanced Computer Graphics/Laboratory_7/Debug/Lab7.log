@@ -1,0 +1,6 @@
+﻿          1 file(s) copied.
+          1 file(s) copied.
+  main.cpp
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_7\main.cpp(42,10): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_7\main.cpp(201,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Lab7.vcxproj -> C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_7\Debug\ACG_Lab7.exe
