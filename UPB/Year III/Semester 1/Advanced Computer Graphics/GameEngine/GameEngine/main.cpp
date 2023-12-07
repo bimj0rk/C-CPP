@@ -81,6 +81,7 @@ int main()
 	Mesh sun = loader.loadObj("Resources/Models/sphere.obj");
 	Mesh box = loader.loadObj("Resources/Models/cube.obj", textures);
 	Mesh plane = loader.loadObj("Resources/Models/plane.obj", textures3);
+	Mesh tree = loader.loadObj("Resources/Models/Tree.obj");
 
 	//check if we close the window or press the escape button
 	while (!window.isPressed(GLFW_KEY_ESCAPE) &&
@@ -135,6 +136,24 @@ int main()
 		glUniform3f(glGetUniformLocation(shader.getId(), "viewPos"), camera.getCameraPosition().x, camera.getCameraPosition().y, camera.getCameraPosition().z);
 
 		box.draw(shader);
+
+		//task 1 & 2
+		for (int i = 0; i < 5; i++) {
+			GLuint MatrixIDTree = glGetUniformLocation(shader.getId(), "MVP");
+			GLuint ModelMatrixIDTree = glGetUniformLocation(shader.getId(), "model");
+
+			ModelMatrix = glm::mat4(1.0);
+			ModelMatrix = glm::scale(ModelMatrix, glm::vec3(20.0f - (i + 3)));
+			ModelMatrix = glm::translate(ModelMatrix, glm::vec3(0.0f + (1.5f + i), 0.0f, 0.0f + (1.5f + i)));
+			MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
+			glUniformMatrix4fv(MatrixIDTree, 1, GL_FALSE, &MVP[0][0]);
+			glUniformMatrix4fv(ModelMatrixIDTree, 1, GL_FALSE, &ModelMatrix[0][0]);
+			glUniform3f(glGetUniformLocation(shader.getId(), "lightColor"), lightColor.x, lightColor.y, lightColor.z);
+			glUniform3f(glGetUniformLocation(shader.getId(), "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+			glUniform3f(glGetUniformLocation(shader.getId(), "viewPos"), camera.getCameraPosition().x, camera.getCameraPosition().y, camera.getCameraPosition().z);
+
+			tree.draw(shader);
+		}
 
 		///// Test plane Obj file //////
 
