@@ -1,9 +1,0 @@
-F:\Teaching\Sem1\ACG\Lab3\Lab3\Debug\ACG_Lab3.exe
-F:\Teaching\Sem1\ACG\Lab3\Lab3\Debug\ACG_Lab3.pdb
-F:\Teaching\Sem1\ACG\Lab3\Lab3-ok\Lab3\Debug\ACG_Lab3.exe
-F:\Teaching\Sem1\ACG\Lab3\Lab3-ok\Lab3\Debug\ACG_Lab3.pdb
-F:\Teaching\Sem1\ACG\Lab4\Lab4\Debug\ACG_Lab4.exe
-F:\Teaching\Sem1\ACG\Lab4\Lab4\Debug\ACG_Lab4.pdb
-H:\2022-2023 teaching\ACG\Lab4\Lab4\Debug\ACG_Lab4.exe
-H:\2022-2023 teaching\ACG\Lab4\Lab4\Debug\ACG_Lab4.pdb
-C:\Users\aicam\source\repos\bimj0rk\C-CPP\UPB\Year III\Semester 1\Advanced Computer Graphics\Laboratory_4\Debug\ACG_Lab4.exe
